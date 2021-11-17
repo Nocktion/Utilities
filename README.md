@@ -9,3 +9,11 @@ Using the GetSystemInfo() method, you can get a nice little string containing al
 <br>
 <br>
 Note: SystemInfo requires a reference to Microfost.VisualBasic and System.Management to work.
+<br>
+<br>
+<b>MSSQL.cs</b><br>
+A little wrapper script for MSSQL, that simplifies the connection and querying in the database.<br>
+
+The Constructor accepts a Server, a username, a password, and optionally a database name. The QueryRead(string query) returns an SqlDataReader for the given query, while the Query(string query) method, executes the query and returns the number of rows affected.<br>
+
+The SqlConnection instance can be accessed as the conn variable. And the Close() method can be used to close the connection, however the connection is closed in the destructor eitherway.
