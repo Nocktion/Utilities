@@ -35,10 +35,10 @@ namespace Nockdev.Database
             return cmd.ExecuteReader();
         }
 
-        public void Query(string query)
+        public int Query(string query)
         {
             SqlCommand cmd = new SqlCommand(query);
-            cmd.ExecuteNonQuery();
+            return cmd.ExecuteNonQuery();
         }
 
         public void Close()
