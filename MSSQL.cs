@@ -1,8 +1,6 @@
-﻿using Nockdev.Database.Data;
+using Nockdev.Database.Data;
 using System.Data.SqlClient;
 
-namespace Nockdev.Database
-{
     public class MSSQL
     {
         public SqlConnection conn;
@@ -46,4 +44,3 @@ namespace Nockdev.Database
             conn.Close();
         }
     }
-}
